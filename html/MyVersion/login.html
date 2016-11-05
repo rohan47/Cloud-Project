@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hooper | Login</title>
+		<link rel="stylesheet" type="text/css" href="master.css">
+		<link rel="stylesheet" type="text/css" href="login.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="left"><a class="hooper" href="http://192.168.1.100/index.html">Hooper</a></li>
+			</ul>
+		</nav>
+		<section class="container">
+			<span class="text"><h1>Log-in to your account</h1></span><br>
+			<form method='post' action='http://192.168.1.100/cgi-bin/usermanagement.cgi'>
+					
+					<input type='text' name='username' placeholder="Username"> <br><br>
+					<input type='password' name='password' placeholder="Password"> <br><br>
+					Create new account:<input type='checkbox' value='checked'  name='new'> <br><br>
+					<input type="submit" value="login"> <br />
+					
+			</form>
+		</section>
+	</body>
+</html>

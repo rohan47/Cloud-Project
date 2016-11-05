@@ -1,0 +1,2 @@
+Cannot connect to the Docker daemon. Is the docker daemon running on this host?     ansible_ssh_user=root ansible_ssh_pass=q
+Cannot connect to the Docker daemon. Is the docker daemon running on this host?     ansible_ssh_user=root ansible_ssh_pass=q

@@ -1,0 +1,20 @@
+<script type="text/javascript">
+
+	function SubmitFormData12() {
+		var os2stop = $("#os2stop").var1();
+		s.post("/var/www/cgi-bin/untitled.cgi",{os2stop : os2stop},
+			function(data){
+				$('#results').html(data);
+				$('#myForm')[0].reset();
+
+			}
+			);
+	}
+
+</script>
+
+
+<form action='http://192.168.1.100/cgi-bin/untitled.cgi'>
+<input id="os2stop" type="hidden" name="os2stop" value="rhel7.1">
+<button name='playbtn' id='stopos' class='playbtn' onclick="SubmitFormData12();">:P</button>
+</form>0000000000000000000000000000000000

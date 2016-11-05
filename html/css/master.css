@@ -1,0 +1,90 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+}
+nav{
+	padding: 0;
+	padding-bottom: 12px;
+	margin: 0;
+	list-style-type: none;
+	background-color: #606060;
+	overflow: hidden;
+	position: relative;
+}
+nav ul li,a{
+	display: inline-block;
+    text-decoration: none;
+    color: #f1f1f1;
+    text-align: center;
+}
+nav ul a.hooper{
+	font-size: 40px;
+	font-weight: bold;
+}
+nav li.left{
+	float: left;
+}
+nav li.right{
+	position: absolute;
+	right: 35px;
+	bottom: 20px;
+}
+nav ul a:hover{
+	color: #fff;
+}
+footer{
+	background-color: #606060;
+	text-align: center;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 45px;
+}
+.dev-right, .dev-left{
+	width: 49%;
+	display: inline-block;
+}
+footer img{
+	max-height: 100px;
+	min-height: 100px;
+	border-radius: 50%;
+}
+.dev-left img{
+	position: relative;
+	left: 50px;
+	float: left;
+}
+.dev-left{
+	text-align: left;
+
+}
+.dev-left .details{
+	margin-left: 170px;
+}
+.dev-left h2{
+	position: relative;
+	padding-left: 120px;
+	top: 15px;
+}
+.dev-right img{
+	float: right;
+	position: relative;
+	right: 50px;
+}
+.dev-right{
+	text-align: right;
+}
+.dev-right .details{
+	margin-right: 170px;
+}
+.dev-right h2{
+	position: relative;
+	right: 120px;
+	top: 15px;
+}
+//@media screen and (min-width:1200px){
+//	.content{
+//		height: 570px;
+//	}
+//}

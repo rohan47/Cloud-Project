@@ -1,0 +1,19 @@
+.about-holder{
+	top: 0px;
+	padding-top: 0;
+}
+form{
+	top: 0px;
+	text-align: left;
+}
+.options{
+	margin-left: 11%;
+	margin-right: 11%;
+}
+input[type=radio]{
+	float: right;
+}
+.data{
+	padding-top: 3%;
+	padding-bottom: 4.5%;
+}

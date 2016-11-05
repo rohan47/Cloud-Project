@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hooper | IAAS</title>
+		<link rel="stylesheet" type="text/css" href="./css/master.css">
+		<link rel="stylesheet" type="text/css" href="./css/services.css">
+		<link rel="stylesheet" type="text/css" href="./css/iaas.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="left"><a class="hooper" href="http://192.168.1.100/index.html">Hooper</a></li>
+				<li class="right"><a class="signin" href="http://192.168.1.100/cgi-bin/logout.cgi'">Log out</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="about-holder">
+				<div id="about">
+					An Infrastructure as a Service (IaaS) is a self-service model for accessing, monitoring, and managing remote datacenter infrastructures, such as compute (virtualized or bare metal), storage, networking, and networking services (e.g. firewalls). IAAS can be purchased as an alternative to actual hardwares.
+				</div>
+			</div>
+			<div class="data">
+				<form method='post' action='http://192.168.1.100/cgi-bin/iaas.cgi'>
+					
+						<!--username:<br /> <input type='text' name='username' /> <br />
+						password:<br />	<input type='password' name='password' /> <br />-->
+						<input type='text' name='ram' placeholder="RAM"> <br>
+						<input type="text" name="sizeofhdd" placeholder="Storage Size"> <br>
+						<input type='text' name='cpucore' placeholder="CPU Cores"> <br>
+						<!--name of your os:<br /><input type='text' name='osname' /> <br /-->
+						<div class="options">
+							Redhat<input type='radio' value="redhat" name='osname' /><br>
+							Windows 8<input type='radio' value="windows8" name='osname' /><br>
+							Ubuntu<input type='radio' value="ubuntu" name='osname' /><br>
+							Mint<input type='radio' value="mint" name='osname' /><br>
+							Kali<input type='radio' value="kali" name='osname' /><br>
+						</div>
+						<input type='text' name='os' placeholder="Operating System"> <br>
+						<input type="submit" value="Create"> <br>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<div class="dev-right">
+				<h2><u>Developed By</u></h2><br>
+				<div>
+					<img src="./images/DP/Rohan.jpg"><br>
+					<div class="details">
+						Rohan Raj Gupta<br>
+						Email id - rohangupta@linux.com
+					</div>
+				</div>
+			</div>
+			<div class="dev-left">
+				<h2><u>Website By</u></h2><br>
+				<div>
+					<img src="./images/DP/Santanu.jpg"><br>
+					<div class="details">
+						Santanu Bhattacharjee<br>
+						Email id - santanu94online@gmail.com
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+				document.getElementById("about").style.right="0px";
+			</script>
+	</body>
+</html>

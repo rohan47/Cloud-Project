@@ -1,0 +1,16 @@
+.options{
+	margin-left: 11%;
+	margin-right: 11%;
+}
+form{
+	text-align: left;
+}
+input[type=radio]{
+	float: right;
+}
+.container span{
+	top: 50px;
+}
+form{
+	top: 25px;
+}

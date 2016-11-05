@@ -1,0 +1,286 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><h1>Ex413 COE Exam</h1>
+
+<p>Duration : 4 hrs</p>
+<p>Passing Credit : 210/300 means 70%</p>
+<p>
+Note :You have provided with 2 VM in exam , where u need to perform, i.e. systemX and systemY</p><p>
+
+</p><p>All the system would be grade after reboot , so your works must be persistent</p>
+<p>root password of all VM : redhat</p>
+
+<p>your server ip : 192.168.0.254</p>
+<p>your ntp server ip : 192.168.0.254</p>
+<p>your domain name : example.com</p>
+<p>your subnet mask : 192.168.0.0/24</p>
+
+<table align="center" width="80%" border="5">
+<tbody><tr bgcolor="grey">
+<th width="20%">Remarks</th>
+<th>Question</th>
+</tr>
+
+<tr>
+<td>
+Recheck <input name="q1" type="radio">
+Done <input name="q1" type="radio">
+</td>
+<td>
+<p>Configure systemX as your ipa server, so that user will start its id from 3200 to 13200</p>
+<p>Your domain is example.com and provide the redhat123 password when require</p>
+<p>Create user harry with password redhat123, uid and gid 5100, home directory as /home/remoteusers/harry</p>
+<p>Create user rosa with password redhat123, uid and gid 5105, home directory as /home/remoteusers/rosa</p>
+<p>Create user john with password redhat123, uid and gid 5110, home directory as /home/remoteusers/john</p>
+</td>
+</tr>
+
+
+<tr bgcolor="#e1e1e1">
+<td>
+Recheck <input name="q2" type="radio">
+Done <input checked="checked" name="2" type="radio">
+</td>
+<td>
+<p>Configure SystemY as ipa client so that when user login it automatic get home directory </p>
+<p>How have to configured  systemY to automatically mount the home 
+directory shared by instructor.example.com  machine, whenever it logs in</p>
+</td>
+</tr>
+
+<tr>
+<td>
+Recheck <input name="q3" type="radio">
+Done <input checked="checked" name="q3" type="radio">
+</td>
+<td>
+<p>YUM repository for updates has been created. Confiure that repository
+ in your system and search for all the Red Hat Security Advisories in 
+the available updates, after installing all the packages required for 
+any other questions, save the Red Hat Security Advisories in 
+/root/rhsa.txt and then update the system with all the security related 
+updates.</p>
+</td>
+</tr>
+
+<tr>
+<td>
+Recheck <input name="q4" type="radio">
+Done <input name="q4" type="radio">
+</td>
+<td>
+<p>Configure systemX as centerlized  logging server, so that client send their log in ssl/tls format</p>
+</td>
+</tr>
+
+
+<tr bgcolor="#e1e1e1">
+<td>
+Recheck <input name="q5" type="radio">
+Done <input name="q5" type="radio">
+</td>
+<td>
+<p>Configure SystemY as logging client so that it send their all logs into systemX server</p>
+<p>SystemX manage separate log of systemY in only /var/log/systemY.log file, and no local logs should be created from now on. </p>
+</td>
+</tr>
+
+
+<tr>
+<td>
+Recheck <input name="q6" type="radio">
+Done <input name="q6" type="radio">
+</td>
+<td>
+<p>On systemY, monitor the file /etc/hello for any read, write and append changes and use the key as ex413key</p>
+<p>All the rules must be persistent and immutable</p>
+</td>
+</tr>
+
+<tr>
+<td>
+Recheck <input name="q7" type="radio">
+Done <input name="q7" type="radio">
+</td>
+<td>
+<p>
+yelp.rpm located at <a href="ftp://192.168.0.254/pub/LinuxWorld-Extra/rhel6_4_updates_rpm/Errata/rhel-x86_64-server-6/yelp-2.28.1-17.el6_3.x86_64.rpm"> yelp.rpm </a> has been signed with some of the keys in <a href="ftp://192.168.0.254/pub/LinuxWorld-Extra/rhel6_4_updates_rpm/"> key path </a>
+ Find out which key is genuine and install it so that RPM packages from 
+the same path can be verified and installed. The non-genuine keys should
+ not be present in the system. Also the pckages available in the 
+repository should be verified and installed with this key.
+</p>
+<p>
+The packages from outside this path should not be verified while installing from YUM.
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+Recheck <input name="q18" type="radio">
+Done <input name="q18" type="radio">
+</td>
+<td>
+<p>
+Certain packages have been kept at <a href="ftp://192.168.0.254/pub/LinuxWorld-Extra/rhel6_4_updates_rpm/"> packages path </a>. Install the packages which will not cause harm to your system. Any malicious packages should not be installed in the system.
+</p>
+</td>
+</tr>
+
+<tr bgcolor="#e1e1e1">
+<td>
+Recheck <input name="q109" type="radio">
+Done <input name="q109" type="radio">
+</td>
+<td>
+<p>A Volume Group by the name of <i>treasure</i> has been created. Create a Logical Volume <i>wallet</i> which will occupy all the space from <i>treasure</i>.</p>
+<p><i>wallet</i> should be encrypted with the passphrase $1skyw0rkz#</p>
+<p><i>wallet</i> should be mounted on the mount point /private and file located at <a href="ftp://192.168.0.254/pub/LinuxWorld-Extra/rhel6_4_updates_rpm/Errata/repodata/repomd.xml">file_path</a> should be present in /private.</p>
+<p>The mount point should be present but must not be persistent over reboot.</p>
+</td>
+</tr>
+<tr>
+<td>
+Recheck <input name="q110" type="radio">
+Done <input name="q101" type="radio">
+</td>
+<td>
+<p>A folder /home/accounting/ is present on systemY.</p>
+<p>This folder should not be altered and the contents should remain unchanged.</p>
+<p>Create a folder <b>secure</b> in it. The owner should be root and the
+ group should be fireman. The owner and members of the group should have
+ full access to the folder and all the contents present in it. Sarah and
+ Jessica should have full access to the folder and the contents within 
+it. Sarah and Jessica can not be a part of the group fireman. No other 
+user should not be able to access the contents of the folder.</p>
+</td>
+</tr>
+
+
+<tr bgcolor="#e1e1e1">
+<td>
+Recheck <input name="q1011" type="radio">
+Done <input name="q1011" type="radio">
+</td>
+<td>
+You have been provided with /root/sample.txt, remove it!
+</td>
+</tr>
+<tr>
+<td>
+Recheck <input name="q112" type="radio">
+Done <input name="q112" type="radio">
+</td>
+<td>
+<p>Monitor the file /etc/permcheck for any ownership changes.</p>
+<p>The database should be created at /var/lib/aide/aide.db.gz</p>
+</td>
+</tr>
+
+
+
+<tr bgcolor="#e1e1e1">
+<td>
+Recheck <input name="q1013" type="radio">
+Done <input name="q1013" type="radio">
+</td>
+<td>
+Search all the commands in /usr/local/bin/ having any special 
+permissions set on them. Copy the list of the files in /root/list.txt
+</td>
+</tr>
+
+<tr>
+<td>
+Recheck <input name="q114" type="radio">
+Done <input name="q114" type="radio">
+</td>
+<td>
+<p>Set limit on the users of the group fireboy for maximum cpu time of 2 minutes.</p>
+<p>User harry can have maximum 3 logins.</p>
+</td>
+</tr>
+
+<tr>
+<td>
+Recheck <input name="q115" type="radio">
+Done <input name="q115" type="radio">
+</td>
+<td>
+<p>Configure systemX and systemY such that if a user enters an incorrect
+ password for more than 3 times, then his account should be locked for 2
+ minutes.</p>
+</td>
+</tr>
+<tr bgcolor="#e1e1e1">
+<td>
+Recheck <input name="q1016" type="radio">
+Done <input name="q1016" type="radio">
+</td>
+<td>
+<p>
+The passwords for all the new users created on systemX should be updated after 30 days.
+</p>
+</td>
+</tr>
+<tr>
+<td>
+Recheck <input name="q117" type="radio">
+Done <input name="q117" type="radio">
+</td>
+<td>
+<p>
+The user sarah should get the default file permissions as -rw-r--r-- and the directory permissions as drwxr-xr-x
+</p>
+</td>
+</tr>
+<tr bgcolor="#e1e1e1">
+<td>
+Recheck <input name="q1018" type="radio">
+Done <input name="q1018" type="radio">
+</td>
+<td>
+<p>
+Configure firewalling on systemX and systemY such that the all connections from localhost are allowed.
+</p>
+<p>
+All the services on systemX and systemY should be accessible from your 
+own domain but should not be accessible from anywhere else with the 
+following exceptions,
+<br>
+ssh should be accessible on SystemX and SystemY from anywhere.
+<br>
+http should be accessible on SystemX from anywhere.
+</p>
+<p>
+The dropped connections should receive a failure message.
+</p>
+</td>
+</tr>
+<tr>
+<td>
+Recheck <input name="q119" type="radio">
+Done <input name="q119" type="radio">
+</td>
+<td>
+Configure systemX and systemY so that nobody can login on root account via ssh.
+</td>
+</tr>
+<tr bgcolor="#e1e1e1">
+<td>
+Recheck <input name="q1020" type="radio">
+Done <input name="q1020" type="radio">
+</td>
+<td>
+The command /usr/bin/db_setpass has been configured such that it accepts
+ passphrase as arguments. Whenever a user runs db_setpass, it prompts 
+for a password and the hash is saved in /etc/db_local. Only root or the 
+user dbmgr should be able to access db_setpass and db_local. The owner 
+and the group of db_local should be dbmgr. Any user should be able to 
+run db_setpass and store the passphrase successfully.
+</td>
+</tr>
+</tbody></table>
+
+
+</body></html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nebula</title>  
+		<style type="text/css">
+			
+			
+			body {
+			    background-image: url('http://192.168.1.100/images/eye-nebulae.jpg');
+			    background-repeat: no-repeat;
+			    background-attachment: fixed;
+			    background-size: 100%  100%;
+			}
+
+			div.outer{
+				border: 1px solid cyan ;
+				position: fixed;
+				width: 100%;
+				height: 3em;
+				top: 0;
+				left: 0;
+				right: 0;
+				background-color: cyan;
+				background-size: 100%  100%;
+				opacity: 0.8;
+				
+				z-index: 2;
+			}
+			div.nav:hover{
+				box-shadow: 2px 2px 2px 2px #81D8D0;
+				z-index: 2;
+				background-color: 	#81D8D0;
+				border: 1px solid #81D8D0;
+			}
+			div.nav{
+				position: absolute;
+				width: 20%;
+				height:100%;
+				border-radius: 10px;
+			}
+			.amenu{
+				text-align: center;
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				height: 100%;
+				font-family: sans-serif;
+				font-size: 190%;
+				margin-top: 3%;
+			}
+
+			div.iaas_form{
+				font-family: monospace;
+				font-size: 130%;
+				background-color: cyan;
+				border: 10px groove cyan;
+				border-radius: 10px;
+				height: 25em;
+				width: 14em;
+				position: absolute;
+				margin-left: 35%;
+				margin-top: 8%;
+			}
+
+
+			.am{
+				text-align: center;
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				height: 100%;
+				font-family: sans-serif;
+				font-size: 190%;
+				margin-top: 3%;
+			}
+			.amenu{
+				text-align: left;
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				height: 100%;
+				color: aquamarine;
+				font-family: sans-serif;
+				font-size: 230%;
+			}
+
+
+
+		</style>
+	</head>
+
+
+	<body>
+		<div class='outer'>
+
+				<div class='nav'>
+					<a class='am' href="http://192.168.1.100/index.html">Home</a>
+				</div>
+
+			</div>
+			<div class='iaas_form' align="center">
+				<form method='post' action='http://192.168.1.100/cgi-bin/usermanagement.cgi' align='center'>
+					
+						username:<br /> <input type='text' name='username' /> <br />
+						password:<br />	<input type='password' name='password' /> <br />
+						Create new account:<input type='checkbox' value='checked'  name='new' /> <br />
+							<input type="submit" value="login"> <br />
+					
+				</form>
+			</div>
+		
+		
+	</body>
+</html>
